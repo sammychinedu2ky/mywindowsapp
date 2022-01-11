@@ -44,7 +44,6 @@ namespace todo.Components
 
             using (var db = new TodoContext())
             {
-                Debug.WriteLine(inputData!.TodoId);
                 db.Remove(inputData);
                 await db.SaveChangesAsync();
                 retriveData();

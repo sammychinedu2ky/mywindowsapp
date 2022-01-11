@@ -71,11 +71,8 @@ namespace todo
 
         private async void onKeyDownEnter(object sender, KeyEventArgs e)
         {
-            Debug.WriteLine(e.Key);
             if (e.Key == Key.Enter)
             {
-                Debug.WriteLine("I dey");
-                Debug.WriteLine((DataContext as TextBoxData).Text);
                 await saveData();
                 Close();
             }

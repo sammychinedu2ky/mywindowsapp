@@ -75,7 +75,6 @@ namespace todo.Components
 
         private async void onKeyDownEnter(object sender, KeyEventArgs e)
         {
-            Debug.WriteLine(e.Key);
             if(e.Key == Key.Enter)
             {
                await saveData();
