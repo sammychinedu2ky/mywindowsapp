@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="todo.Components.Add"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:todo.Components"
+             mc:Ignorable="d"
+             d:DesignHeight="450"
+             d:DesignWidth="800">
+    <Grid Background="{DynamicResource GridBackgroundColor}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*" />
+            <ColumnDefinition Width="57*" />
+            <ColumnDefinition Width="62*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Input Task"
+               FontSize="22"
+               FontWeight="Bold"
+               HorizontalAlignment="Right"
+               Width="120"
+               VerticalAlignment="Center"
+               Height="41"
+               Foreground="{DynamicResource TextBoxBackground}" />
+        <TextBox Background="{DynamicResource TextBoxBackground}"
+                 TextWrapping="Wrap"
+                 Text="{Binding Path=Text, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                 VerticalAlignment="Center"
+                 Height="22"
+                 HorizontalAlignment="Stretch"
+                 Grid.Column="1"
+                 KeyDown="onKeyDownEnter" />
+        <Button Click="Button_Click"
+                Background="{DynamicResource ButtonAddColor}"
+                VerticalAlignment="Center"
+                Height="22"
+                Content="Add"
+                Width="112"
+                HorizontalAlignment="Left"
+                Grid.Column="2"
+                Margin="10,0,0,0"
+                Foreground="{DynamicResource TextBoxBackground}" />
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "70d29aaa-a68f-4dd1-9821-8e4a156e7395": {
+      "ProjectGuid": "70d29aaa-a68f-4dd1-9821-8e4a156e7395",
+      "DisplayName": "todo",
+      "ColorIndex": 0
+    },
+    "0efe4f15-4915-4ca4-ba58-e6d408a9e019": {
+      "ProjectGuid": "0efe4f15-4915-4ca4-ba58-e6d408a9e019",
+      "DisplayName": "Database1",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

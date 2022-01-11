@@ -1,0 +1,49 @@
+﻿<Window x:Class="todo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:todo.Components"
+        mc:Ignorable="d"
+        Title="MyTodos"
+        Height="450"
+        Width="800"
+       >
+    <Grid>
+        <TabControl>
+            <TabItem Header="Todos">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45*" />
+                        <RowDefinition Height="158*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <local:Add Grid.Row="0"
+                               Grid.Column="0" />
+                    <local:MyTodos Grid.Row="1"
+                                   Grid.Column="1"
+                                   Loaded="MyTodos_Loaded" />
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="About">
+                <Grid Background="{DynamicResource TextBoxBackground}"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center">
+                    <StackPanel>
+                    <TextBlock Text="My First Windows App"
+                                   FontSize="50" />
+                    <TextBlock Text="Made by Samson Amaugo"
+                               FontSize="20
+                               "
+                               VerticalAlignment="Top" />
+                    </StackPanel>
+                </Grid>
+
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
